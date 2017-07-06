@@ -14,6 +14,7 @@
 		FA0AAA241F0DEB320036FA37 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA0AAA221F0DEB320036FA37 /* LaunchScreen.storyboard */; };
 		FA0AAA341F0DEC240036FA37 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0AAA331F0DEC240036FA37 /* User.swift */; };
 		FA0AAA361F0DEC460036FA37 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0AAA351F0DEC460036FA37 /* Group.swift */; };
+		FA0AAA391F0DF9660036FA37 /* Kinpira.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA0AAA381F0DF9660036FA37 /* Kinpira.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		FA0AAA251F0DEB320036FA37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA0AAA331F0DEC240036FA37 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		FA0AAA351F0DEC460036FA37 /* Group.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
+		FA0AAA381F0DF9660036FA37 /* Kinpira.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kinpira.framework; path = Carthage/Build/iOS/Kinpira.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA0AAA391F0DF9660036FA37 /* Kinpira.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +47,7 @@
 			children = (
 				FA0AAA181F0DEB320036FA37 /* Example */,
 				FA0AAA171F0DEB320036FA37 /* Products */,
+				FA0AAA371F0DF9660036FA37 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +74,14 @@
 			path = Example;
 			sourceTree = "<group>";
 		};
+		FA0AAA371F0DF9660036FA37 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA0AAA381F0DF9660036FA37 /* Kinpira.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -80,6 +92,7 @@
 				FA0AAA121F0DEB320036FA37 /* Sources */,
 				FA0AAA131F0DEB320036FA37 /* Frameworks */,
 				FA0AAA141F0DEB320036FA37 /* Resources */,
+				FA0AAA3A1F0DF9710036FA37 /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -137,6 +150,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		FA0AAA3A1F0DF9710036FA37 /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Kinpira.framework",
+			);
+			name = Carthage;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/brew/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FA0AAA121F0DEB320036FA37 /* Sources */ = {
@@ -270,6 +301,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = QXPJZMLYGP;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Example/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fumikoi.Kinpira.Example;
@@ -283,6 +318,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = QXPJZMLYGP;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Example/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fumikoi.Kinpira.Example;
@@ -310,6 +349,7 @@
 				FA0AAA2A1F0DEB320036FA37 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
