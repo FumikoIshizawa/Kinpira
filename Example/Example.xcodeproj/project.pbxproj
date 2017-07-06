@@ -93,6 +93,7 @@
 				FA0AAA131F0DEB320036FA37 /* Frameworks */,
 				FA0AAA141F0DEB320036FA37 /* Resources */,
 				FA0AAA3A1F0DF9710036FA37 /* Carthage */,
+				FA0AAA3B1F0DFCCF0036FA37 /* Kinpira */,
 			);
 			buildRules = (
 			);
@@ -166,6 +167,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "/opt/brew/bin/carthage copy-frameworks";
+		};
+		FA0AAA3B1F0DFCCF0036FA37 /* Kinpira */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Kinpira;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./script.swift > ${PROJECT_DIR}/CloudFunctions/rules.json\necho \"exported.\"";
 		};
 /* End PBXShellScriptBuildPhase section */
 
