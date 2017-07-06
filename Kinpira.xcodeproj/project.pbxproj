@@ -1,0 +1,441 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FA0AA9FD1F0DEACD0036FA37 /* Kinpira.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA0AA9F31F0DEACD0036FA37 /* Kinpira.framework */; };
+		FA0AAA021F0DEACD0036FA37 /* KinpiraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0AAA011F0DEACD0036FA37 /* KinpiraTests.swift */; };
+		FA0AAA041F0DEACE0036FA37 /* Kinpira.h in Headers */ = {isa = PBXBuildFile; fileRef = FA0AA9F61F0DEACD0036FA37 /* Kinpira.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA0AAA2C1F0DEB800036FA37 /* Compiler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0AAA2B1F0DEB800036FA37 /* Compiler.swift */; };
+		FA0AAA2E1F0DEB9B0036FA37 /* Rule.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0AAA2D1F0DEB9B0036FA37 /* Rule.swift */; };
+		FA0AAA301F0DEBB90036FA37 /* Ruleable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0AAA2F1F0DEBB90036FA37 /* Ruleable.swift */; };
+		FA0AAA321F0DEBD10036FA37 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0AAA311F0DEBD10036FA37 /* Util.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FA0AA9FE1F0DEACD0036FA37 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA0AA9EA1F0DEACD0036FA37 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA0AA9F21F0DEACD0036FA37;
+			remoteInfo = Kinpira;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FA0AA9F31F0DEACD0036FA37 /* Kinpira.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Kinpira.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA0AA9F61F0DEACD0036FA37 /* Kinpira.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Kinpira.h; sourceTree = "<group>"; };
+		FA0AA9F71F0DEACD0036FA37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA0AA9FC1F0DEACD0036FA37 /* KinpiraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KinpiraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA0AAA011F0DEACD0036FA37 /* KinpiraTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KinpiraTests.swift; sourceTree = "<group>"; };
+		FA0AAA031F0DEACE0036FA37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA0AAA2B1F0DEB800036FA37 /* Compiler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Compiler.swift; sourceTree = "<group>"; };
+		FA0AAA2D1F0DEB9B0036FA37 /* Rule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rule.swift; sourceTree = "<group>"; };
+		FA0AAA2F1F0DEBB90036FA37 /* Ruleable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ruleable.swift; sourceTree = "<group>"; };
+		FA0AAA311F0DEBD10036FA37 /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA0AA9EF1F0DEACD0036FA37 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA0AA9F91F0DEACD0036FA37 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA0AA9FD1F0DEACD0036FA37 /* Kinpira.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FA0AA9E91F0DEACD0036FA37 = {
+			isa = PBXGroup;
+			children = (
+				FA0AA9F51F0DEACD0036FA37 /* Kinpira */,
+				FA0AAA001F0DEACD0036FA37 /* KinpiraTests */,
+				FA0AA9F41F0DEACD0036FA37 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FA0AA9F41F0DEACD0036FA37 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA0AA9F31F0DEACD0036FA37 /* Kinpira.framework */,
+				FA0AA9FC1F0DEACD0036FA37 /* KinpiraTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA0AA9F51F0DEACD0036FA37 /* Kinpira */ = {
+			isa = PBXGroup;
+			children = (
+				FA0AA9F61F0DEACD0036FA37 /* Kinpira.h */,
+				FA0AA9F71F0DEACD0036FA37 /* Info.plist */,
+				FA0AAA2B1F0DEB800036FA37 /* Compiler.swift */,
+				FA0AAA2D1F0DEB9B0036FA37 /* Rule.swift */,
+				FA0AAA2F1F0DEBB90036FA37 /* Ruleable.swift */,
+				FA0AAA311F0DEBD10036FA37 /* Util.swift */,
+			);
+			path = Kinpira;
+			sourceTree = "<group>";
+		};
+		FA0AAA001F0DEACD0036FA37 /* KinpiraTests */ = {
+			isa = PBXGroup;
+			children = (
+				FA0AAA011F0DEACD0036FA37 /* KinpiraTests.swift */,
+				FA0AAA031F0DEACE0036FA37 /* Info.plist */,
+			);
+			path = KinpiraTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		FA0AA9F01F0DEACD0036FA37 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA0AAA041F0DEACE0036FA37 /* Kinpira.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		FA0AA9F21F0DEACD0036FA37 /* Kinpira */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA0AAA071F0DEACE0036FA37 /* Build configuration list for PBXNativeTarget "Kinpira" */;
+			buildPhases = (
+				FA0AA9EE1F0DEACD0036FA37 /* Sources */,
+				FA0AA9EF1F0DEACD0036FA37 /* Frameworks */,
+				FA0AA9F01F0DEACD0036FA37 /* Headers */,
+				FA0AA9F11F0DEACD0036FA37 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Kinpira;
+			productName = Kinpira;
+			productReference = FA0AA9F31F0DEACD0036FA37 /* Kinpira.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FA0AA9FB1F0DEACD0036FA37 /* KinpiraTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA0AAA0A1F0DEACE0036FA37 /* Build configuration list for PBXNativeTarget "KinpiraTests" */;
+			buildPhases = (
+				FA0AA9F81F0DEACD0036FA37 /* Sources */,
+				FA0AA9F91F0DEACD0036FA37 /* Frameworks */,
+				FA0AA9FA1F0DEACD0036FA37 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA0AA9FF1F0DEACD0036FA37 /* PBXTargetDependency */,
+			);
+			name = KinpiraTests;
+			productName = KinpiraTests;
+			productReference = FA0AA9FC1F0DEACD0036FA37 /* KinpiraTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA0AA9EA1F0DEACD0036FA37 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = fumikoi;
+				TargetAttributes = {
+					FA0AA9F21F0DEACD0036FA37 = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = QXPJZMLYGP;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+					};
+					FA0AA9FB1F0DEACD0036FA37 = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = QXPJZMLYGP;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = FA0AA9ED1F0DEACD0036FA37 /* Build configuration list for PBXProject "Kinpira" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FA0AA9E91F0DEACD0036FA37;
+			productRefGroup = FA0AA9F41F0DEACD0036FA37 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA0AA9F21F0DEACD0036FA37 /* Kinpira */,
+				FA0AA9FB1F0DEACD0036FA37 /* KinpiraTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FA0AA9F11F0DEACD0036FA37 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA0AA9FA1F0DEACD0036FA37 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA0AA9EE1F0DEACD0036FA37 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA0AAA2C1F0DEB800036FA37 /* Compiler.swift in Sources */,
+				FA0AAA2E1F0DEB9B0036FA37 /* Rule.swift in Sources */,
+				FA0AAA301F0DEBB90036FA37 /* Ruleable.swift in Sources */,
+				FA0AAA321F0DEBD10036FA37 /* Util.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA0AA9F81F0DEACD0036FA37 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA0AAA021F0DEACD0036FA37 /* KinpiraTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FA0AA9FF1F0DEACD0036FA37 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA0AA9F21F0DEACD0036FA37 /* Kinpira */;
+			targetProxy = FA0AA9FE1F0DEACD0036FA37 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		FA0AAA051F0DEACE0036FA37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FA0AAA061F0DEACE0036FA37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FA0AAA081F0DEACE0036FA37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = QXPJZMLYGP;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Kinpira/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fumikoi.Kinpira;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		FA0AAA091F0DEACE0036FA37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = QXPJZMLYGP;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Kinpira/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fumikoi.Kinpira;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		FA0AAA0B1F0DEACE0036FA37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = QXPJZMLYGP;
+				INFOPLIST_FILE = KinpiraTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fumikoi.KinpiraTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		FA0AAA0C1F0DEACE0036FA37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = QXPJZMLYGP;
+				INFOPLIST_FILE = KinpiraTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fumikoi.KinpiraTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA0AA9ED1F0DEACD0036FA37 /* Build configuration list for PBXProject "Kinpira" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA0AAA051F0DEACE0036FA37 /* Debug */,
+				FA0AAA061F0DEACE0036FA37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA0AAA071F0DEACE0036FA37 /* Build configuration list for PBXNativeTarget "Kinpira" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA0AAA081F0DEACE0036FA37 /* Debug */,
+				FA0AAA091F0DEACE0036FA37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA0AAA0A1F0DEACE0036FA37 /* Build configuration list for PBXNativeTarget "KinpiraTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA0AAA0B1F0DEACE0036FA37 /* Debug */,
+				FA0AAA0C1F0DEACE0036FA37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FA0AA9EA1F0DEACD0036FA37 /* Project object */;
+}
