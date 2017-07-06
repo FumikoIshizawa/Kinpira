@@ -6,7 +6,8 @@
 //  Copyright © 2017年 fumikoi. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+//#import <UIKit/UIKit.h>
+@import Foundation;
 
 //! Project version number for Kinpira.
 FOUNDATION_EXPORT double KinpiraVersionNumber;

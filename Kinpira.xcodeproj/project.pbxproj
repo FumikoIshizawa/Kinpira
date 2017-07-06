@@ -14,6 +14,11 @@
 		FA0AAA2E1F0DEB9B0036FA37 /* Rule.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0AAA2D1F0DEB9B0036FA37 /* Rule.swift */; };
 		FA0AAA301F0DEBB90036FA37 /* Ruleable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0AAA2F1F0DEBB90036FA37 /* Ruleable.swift */; };
 		FA0AAA321F0DEBD10036FA37 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0AAA311F0DEBD10036FA37 /* Util.swift */; };
+		FA40D4EA1F0E3061005BC4D4 /* Kinpira.h in Headers */ = {isa = PBXBuildFile; fileRef = FA0AA9F61F0DEACD0036FA37 /* Kinpira.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA40D4EB1F0E319C005BC4D4 /* Compiler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0AAA2B1F0DEB800036FA37 /* Compiler.swift */; };
+		FA40D4EC1F0E31A3005BC4D4 /* Rule.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0AAA2D1F0DEB9B0036FA37 /* Rule.swift */; };
+		FA40D4ED1F0E31AB005BC4D4 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0AAA311F0DEBD10036FA37 /* Util.swift */; };
+		FA40D4EE1F0E31AE005BC4D4 /* Ruleable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0AAA2F1F0DEBB90036FA37 /* Ruleable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +42,7 @@
 		FA0AAA2D1F0DEB9B0036FA37 /* Rule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rule.swift; sourceTree = "<group>"; };
 		FA0AAA2F1F0DEBB90036FA37 /* Ruleable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ruleable.swift; sourceTree = "<group>"; };
 		FA0AAA311F0DEBD10036FA37 /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		FA40D4E11F0E2EF1005BC4D4 /* Kinpira.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Kinpira.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +58,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA0AA9FD1F0DEACD0036FA37 /* Kinpira.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA40D4DD1F0E2EF1005BC4D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +85,7 @@
 			children = (
 				FA0AA9F31F0DEACD0036FA37 /* Kinpira.framework */,
 				FA0AA9FC1F0DEACD0036FA37 /* KinpiraTests.xctest */,
+				FA40D4E11F0E2EF1005BC4D4 /* Kinpira.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -106,6 +120,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA0AAA041F0DEACE0036FA37 /* Kinpira.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA40D4DE1F0E2EF1005BC4D4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA40D4EA1F0E3061005BC4D4 /* Kinpira.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,6 +170,24 @@
 			productReference = FA0AA9FC1F0DEACD0036FA37 /* KinpiraTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		FA40D4E01F0E2EF1005BC4D4 /* KinpiraMacOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA40D4E81F0E2EF1005BC4D4 /* Build configuration list for PBXNativeTarget "KinpiraMacOS" */;
+			buildPhases = (
+				FA40D4DC1F0E2EF1005BC4D4 /* Sources */,
+				FA40D4DD1F0E2EF1005BC4D4 /* Frameworks */,
+				FA40D4DE1F0E2EF1005BC4D4 /* Headers */,
+				FA40D4DF1F0E2EF1005BC4D4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KinpiraMacOS;
+			productName = KinpiraMacOS;
+			productReference = FA40D4E11F0E2EF1005BC4D4 /* Kinpira.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -169,6 +209,11 @@
 						DevelopmentTeam = QXPJZMLYGP;
 						ProvisioningStyle = Automatic;
 					};
+					FA40D4E01F0E2EF1005BC4D4 = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = QXPJZMLYGP;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = FA0AA9ED1F0DEACD0036FA37 /* Build configuration list for PBXProject "Kinpira" */;
@@ -185,6 +230,7 @@
 			targets = (
 				FA0AA9F21F0DEACD0036FA37 /* Kinpira */,
 				FA0AA9FB1F0DEACD0036FA37 /* KinpiraTests */,
+				FA40D4E01F0E2EF1005BC4D4 /* KinpiraMacOS */,
 			);
 		};
 /* End PBXProject section */
@@ -198,6 +244,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		FA0AA9FA1F0DEACD0036FA37 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA40D4DF1F0E2EF1005BC4D4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -223,6 +276,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA0AAA021F0DEACD0036FA37 /* KinpiraTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA40D4DC1F0E2EF1005BC4D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA40D4EB1F0E319C005BC4D4 /* Compiler.swift in Sources */,
+				FA40D4EE1F0E31AE005BC4D4 /* Ruleable.swift in Sources */,
+				FA40D4ED1F0E31AB005BC4D4 /* Util.swift in Sources */,
+				FA40D4EC1F0E31A3005BC4D4 /* Rule.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,6 +469,52 @@
 			};
 			name = Release;
 		};
+		FA40D4E61F0E2EF1005BC4D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = QXPJZMLYGP;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = Kinpira/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fumikoi.Kinpira;
+				PRODUCT_NAME = Kinpira;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		FA40D4E71F0E2EF1005BC4D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = QXPJZMLYGP;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = Kinpira/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fumikoi.Kinpira;
+				PRODUCT_NAME = Kinpira;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -434,6 +544,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		FA40D4E81F0E2EF1005BC4D4 /* Build configuration list for PBXNativeTarget "KinpiraMacOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA40D4E61F0E2EF1005BC4D4 /* Debug */,
+				FA40D4E71F0E2EF1005BC4D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
